@@ -5,8 +5,18 @@
 	<title>Page not found</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+	<![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+  <script src="jquery.placeholder.js"></script>
+  <script>
+   $(function() {
+    $('input, textarea').placeholder();
+   });
+    </script>
 </head>
 
 <body>
@@ -45,18 +55,18 @@
 			</ul>
 		</nav>
 
-			<div class="searchbox">
-			  <form action="?" method="get">
-			    <input name="search" type="text" placeholder="Search Modern Spaces" />
-			    <input type="submit" value="" />
-			  </form>
-			</div><!--searchBoxOne-->
-
-		<footer> &copy; Modern Spaces NYC. All Rights Reserved </footer>
 	</div><!--page-wrap-->
 <div id="line">
-
-</div>
+	<div id="box">
+		<div class="searchbox">
+				  <form action="?" method="get">
+				    <input name="search" type="text" placeholder="Search Modern Spaces" />
+				    <input type="submit" value="" />
+				  </form>
+		</div><!--searchBoxOne-->
+	</div><!--box-->
+</div><!--line-->
+<footer> &copy; Modern Spaces NYC. All Rights Reserved </footer>
 </div><!--outer-wrap-->
 		
 </body>
