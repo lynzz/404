@@ -1,0 +1,8 @@
+#line {
+ 	width: 100%;
+    margin: 100px 0 0;
+    z-index: -1;
+ 	height:103px;
+	background: url(../images/line.png) repeat-x left;
+
+ }
